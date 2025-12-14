@@ -1,9 +1,6 @@
 # LabFinal
 Laboratorio Final de Katherine - Integración continue, API &amp; Performance testing
 
-# LabFinal
-Laboratorio Final de Katherine - Integración continue, API &amp; Performance testing
-
 # CT Lab – Newman + Playwright CI
 
 Este repositorio contiene un laboratorio de **automatización de pruebas** que combina:
