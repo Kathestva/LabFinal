@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test:newman": "newman run postman/UltiLab.postman_collection.json -e postman/UltiLaV.postman_environment.json",
-    "test": "npx playwright test"
+    "test:newmanHTML": "newman run ./postman/UltiLaB.postman_collection.json -e ./postman/UltiLaV.postman_environment.json --reporters cli,html --reporter-html-export ./reports/newman-report.html ",
+    "test:playwright": "playwright test",
+    "test:playwright:report": "playwright test --reporter=html"
   },
   "repository": {
     "type": "git",
