@@ -1,0 +1,28 @@
+{
+  "name": "labfinal",
+  "version": "1.0.0",
+  "description": "Laboratorio Final de Katherine - Integración continue, API &amp; Performance testing",
+  "main": "index.js",
+  "scripts": {
+    "test:newman": "newman run postman/UltiLab.postman_collection.json -e postman/UltiLaV.postman_environment.json",
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kathestva/LabFinal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kathestva/LabFinal/issues"
+  },
+  "homepage": "https://github.com/Kathestva/LabFinal#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "install": "^0.13.0",
+    "newman": "^6.2.1",
+    "npx": "^3.0.0",
+    "playwright": "^1.57.0"
+  }
+}

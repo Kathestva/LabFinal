@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "8e330d7f-0a40-4f25-b7c1-2a1223f45065",
+		"name": "UltiLab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47209561",
+		"_collection_link": "https://cryosat-meteorologist-46374356-6563271.postman.co/workspace/KATHERINE-DENISE-STEWARD-VARGAS~b5a47b8f-e628-4e5b-853a-17e2a609df88/collection/47209561-8e330d7f-0a40-4f25-b7c1-2a1223f45065?action=share&source=collection_link&creator=47209561"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/posts",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un post por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/posts/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un nuevo post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Mi primer post\",\r\n  \"body\": \"Este es el contenido del post\",\r\n  \"userId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/posts",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un post completo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"title\": \"Post actualizado\",\r\n  \"body\": \"Contenido actualizado\",\r\n  \"userId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/posts/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un post",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"title\": \"Post actualizado\",\r\n  \"body\": \"Contenido actualizado\",\r\n  \"userId\": 1\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{baseURL}}/posts/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": ""
+		}
+	]
+}
